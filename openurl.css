@@ -1,0 +1,35 @@
+.history {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.history li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding: 0.6rem 0;
+  font-size: 0.875rem;
+}
+
+.history li a {
+  color: #4f46e5;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.history li a:hover {
+  text-decoration: underline;
+}
+
+.history-label {
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
