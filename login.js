@@ -22,6 +22,11 @@ function showFieldError(input, errorEl, msg) {
   input.classList.toggle('invalid', !!msg);
 }
 
+// Allow Jest to import pure functions without a DOM
+if (typeof module !== 'undefined') {
+  module.exports = { validateEmail, validatePassword, showFieldError };
+}
+
 emailInput.addEventListener('input', () => {
   showFieldError(emailInput, emailError, validateEmail(emailInput.value.trim()));
 });
